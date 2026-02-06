@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background-color: #f5f5f5;
+  color: #333;
+}
+h1 {
+  color: #007acc;
+}
+#message {
+  margin-top: 1rem;
+  font-weight: bold;
+}

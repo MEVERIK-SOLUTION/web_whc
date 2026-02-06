@@ -1,0 +1,10 @@
+# Konfigurace Netlify pro nasazení statického webu
+[build]
+  publish = "."  # adresář, který Netlify publikuje – zde je kořen projektu【22†L13-L23】
+  command = "echo 'Žádný build není potřeba, čistý statický web.'"
+
+# Přesměrování všech tras na index.html pro správnou navigaci v SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
