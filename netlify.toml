@@ -4,6 +4,12 @@
   command = "echo 'Žádný build není potřeba, čistý statický web.'"
 
 # Přesměrování všech tras na index.html pro správnou navigaci v SPA
+# Kromě API endpointů
+[[redirects]]
+  from = "/api/*"
+  to = "/api/:splat"
+  status = 200
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
