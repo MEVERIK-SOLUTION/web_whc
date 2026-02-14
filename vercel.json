@@ -1,10 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 3,
-  // Odstraní koncovku .html z URL a přesměruje /about.html na /about【8†L80-L92】
   "cleanUrls": true,
-  // Přepíše všechny požadavky na index.html, což umožňuje funkčnost single‑page aplikace
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!api).*)", "destination": "/index.html" }
   ]
 }
